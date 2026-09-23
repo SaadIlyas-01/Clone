@@ -17,7 +17,7 @@ function Hero() {
         </div>
 
         <p className="w-full max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 text-center leading-relaxed">
-          I’m Muhammad Saad—a Web Developer turning mechanics into responsive,
+          I’m Saad Ilyas—a Web Developer turning mechanics into responsive,
           maintainable experiences across mobile.
         </p>
 

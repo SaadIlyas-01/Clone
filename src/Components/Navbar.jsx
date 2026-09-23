@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useState } from "react";
 import Logo from "../assets/images/logo.png";
 
@@ -12,8 +13,9 @@ function Navbar() {
         <div className="h-14 px-3 flex items-center justify-between">
 
           <div className="flex items-center">
-            <img src={Logo} alt="logo" className="w-9 h-9"/>
-
+            <Link to="/">
+              <img src={Logo} alt="logo" className="w-9 h-9" />
+            </Link>
             <div className="ml-3">
               <p className="font-bold text-xs">
                 Muhammad Saad
@@ -27,10 +29,10 @@ function Navbar() {
 
           <div className="hidden md:flex items-center gap-5 lg:gap-7 xl:gap-9 text-xs text-gray-500 font-bold">
 
-            <a href="">Projects</a>
-            <a href="">About</a>
-            <a href="">Capabilities</a>
-            <a href="">Writing</a>
+            <Link to="/projects">Projects</Link>
+            <Link to="/about">About</Link>
+            <Link to="/capabilities">Capabilities</Link>
+            <Link to="/writing">Writing</Link>
 
             <button className="border-2 rounded-full py-3 px-6 lg:px-7 text-white bg-black cursor-pointer">
               Let's Talk
@@ -49,10 +51,10 @@ function Navbar() {
 
             <div className="flex flex-col items-center gap-5 text-xs text-gray-500 font-bold">
 
-              <a href="">Projects</a>
-              <a href="">About</a>
-              <a href="">Capabilities</a>
-              <a href="">Writing</a>
+              <Link to="/projects">Projects</Link>
+              <Link to="/about">About</Link>
+              <Link to="/capabilities">Capabilities</Link>
+              <Link to="/writing">Writing</Link>
 
               <button className="border-2 rounded-full py-3 px-7 text-white bg-black cursor-pointer">
                 Let's Talk
